@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+</head>
+<body>
+    <style>
+        a{
+            border-color: rgb(176, 32, 32);
+            outline: auto;
+            outline-style: inset;
+            outline-color: rgb(30, 0, 255);
+            border-width: 5x;
+            border-radius: 10px;
+            padding: 10px;
+            text-decoration: none; /* ini buat ngilangin si garis bawah yang ada di link */
+            
+
+
+
+        }
+        a:visited{
+            color: rgb(228, 12, 12);
+            border-color: rgb(220, 24, 24); /* ini contoh pseudo clases , jadi guna nya ketika di klik dan kita mengunjungi link nya ,
+             warna font nya berubah red tanda kalo kita sudah visit*/
+        }
+        a:hover{
+            color: aliceblue;
+            background-color: red;  /* pseud-classes selector ->  Pseudo-classes selector digunakan untuk memilih dan mengatur gaya 
+        suatu elemen hanya ketika elemen tersebut berada dalam kondisi atau status tertentu.
+        "Kondisi tertentu" ini biasanya terjadi karena adanya interaksi dari pengguna 
+        (seperti menyentuh, mengklik, atau mengarahkan kursor). ketika kursor kita menyentuh buuton maka warna berubah */
+        }
+        .lor{
+            margin: 40px;
+        }
+        /* pseudo-element selector -> untuk menambahkan selector ke bagian tertentu dari element yang terlseleksi
+        kalo mau pake pseudo-element kita harus gunakan pemisah tanda (::) titik dua nya dua kali*/  
+        .list{
+            list-style-type:"\1F44D"; /*ini gunanya kalo kalian ingin mengubah si list nya jadi kotak ,angka ,emoji dll.*/
+           list-style-position: outside;
+           outline-style: solid;
+           background-color: olive;
+           border-radius: 10px;
+           padding: 30px;
+           color: rgb(0, 0, 0);
+            
+
+        }
+        table,th,td,tr{
+            border-style:solid;
+            width: 10px;
+            height: 20px;
+            border-collapse: collapse; /*nah ini buat kalo kalian mau nyambung si garis kotak nya atau mau nyatu*/
+            border-radius: 4px;
+        }
+        table{
+            width: 280px;
+            height:200px; /*Ini kita bisa ngatur lebar dan juga tinggi table */
+        }
+        td{
+            text-align: center; /*ini kita bisa mengubah posisi teks nya jadi di tengah*/
+        }
+        tr:hover{
+            background-color: aqua; 
+
+
+        }
+        .ini{
+            background-color: pink;
+        }
+        .itu{
+            background-color: red;
+        }
+
+
+
+
+
+        #user,#pass{
+            border-color: palevioletred;
+            border-radius: 5px;
+            border-style: solid;
+        }
+        form{
+            margin: 10px;
+            padding: 10px;
+        }
+         
+        #user:focus,#pass:focus{ /*ini digunakan untuk mengubah gaya elemen (seperti tombol atau kolom ketikan)
+             TEPAT saat elemen tersebut sedang diklik, dipilih, atau sedang aktif diisi.*/
+            color: black;
+            background-color: pink;
+        }
+        label{
+            font-style: oblique;
+        }
+        #log{
+            border-color: palevioletred;
+            border-radius: 10px;
+            border-style: solid;
+            padding: 10px;
+        
+           
+            
+        }
+        #input.required{
+            color: azure; 
+        }
+        #log:hover{  /*ini buat si backgound login nya,
+            saat kita arahkan kursor ke login ,nanti berubah wananya*/
+            background-color: palevioletred;
+        }
+        input{
+            margin: 5px;
+        }
+
+       
+
+    </style>
+    <form action="facebook.com " method="post" enctype="multipart/form-data">
+        <label for="username">
+            Username: 
+            <input type="text" required id="user">
+        </label> 
+        <br>
+        <label for="password"> 
+            Password: 
+            <input type="password" required  id="pass">
+        </label>
+        <br>
+        <button type="submit" value="submit" id="log">submit</button>
+    </form>
+
+
+
+    <div class="lor">
+        <a href="http://instagram.com">instagram</a>
+     <a href="http://facebook.com">facebook</a>
+      <a href="http://spotify.com">spotify</a>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+               
+                <th>bahan</th>
+                <th>Harga</th> 
+            </tr>
+        </thead>
+        <body>
+           
+                <tr class="ini">
+                   <td>gula </td>
+                    <td>100 rb</td>
+                </tr>
+           
+        </body>
+         <body>
+                <tr class="itu">
+                   <td>garam </td>
+                    <td>10rb</td>
+                </tr>
+        </body>
+         <body>
+                <tr class="ini">
+                   <td>garam </td>
+                    <td>10rb</td>
+                </tr>
+        </body>
+         <body>
+                <tr class="itu">
+                   <td>garam </td>
+                    <td>10rb</td>
+                </tr>
+        </body>
+    </table>
+    <ul class="list">
+        <li> suatu elemen hanya ketika elemen tersebut berada dalam kondisi atau status tertentu.
+        "Kondisi tertentu" ini biasanya terjadi karena adanya interaksi dari pengguna 
+        (seperti menyentuh, mengklik, atau mengarahkan kursor). ketika kursor kita menyentuh buuton</li>
+        <li>Di bandung gua banyak mempelajari kehidupan yang ternyata  simple kalo kita syukuri </li>
+        <li>mootr</li>
+        <li>yuga</li>
+        <li>mobil</li>
+        <li>mobil</li>
+    </ul>
+</body>
+</html>
+
+

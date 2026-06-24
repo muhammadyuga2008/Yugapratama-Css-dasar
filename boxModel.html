@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+</head>
+<body>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+        }
+        div{
+            padding: 1em; /* padding tuh buat ngatur si text nya biar gak nempel ke pinggir
+            biar rapih dan enak di baca text nya */
+            margin: 0%;
+            background-color: palevioletred;
+        }
+        p{
+            padding: 0%;
+            margin: 0%;
+            text-align: justify;
+        }
+        .article{
+            height: 300px; /* height : untuk mengatur ketinggian*/
+            border-style: solid; /* border-style untuk mengatur tampilan garis tepi bingkai */
+            border-width: 5px; /* BORDER-WIDTH untuk mengatur tebal tipis nya si garis nya*/
+            background-color: rgb(54, 56, 56); /* background-color buat ngatur warna si backgrnd nya*/
+            width: 400px; /* width: untuk mengatur kelebaran content*/
+            font-size: 20px; /* font-size di gunakan untuk mengatur besar kecil nya font nya.*/
+            padding: 1em;
+            margin: 10px 10px 10px 10px ;
+
+
+            overflow: auto; /* nah ini buat kalo kalian text nya keluar dari garis tepi ,
+            kalian bisa tambahin overflow , Simplenya, overflow itu digunakan untuk mengatur apa yang harus dilakukan kalau isi (konten) terlalu besar dan meluber keluar dari kotaknya.*/
+
+            /* MARGIN itu tugas nya ngatur jarak antar element biar gak saling tabrakan atau nempel satu sama lain
+            tadi kalo padding buat ngatur jarak di dalam*/
+
+           
+        }
+        .article2{
+            border-style: solid;
+            border-width: 6px;
+
+            height: 150px;
+            width: 300px;
+            padding: 20px;
+            margin: 10px 10px 10px 10px;
+
+
+            border-radius: 10px 10px 10px 10px; /*border-radius digunakan untuk membuat
+             sudut-sudut elemen menjadi melengkung atau bulat (rounded corners).*/
+
+            outline-style: solid;
+            outline-width: 2px;
+
+
+            /*outline-style outline-width = outline-style dan outline-width digunakan untuk membuat garis luar di sekeliling elemen,
+             mirip sekali dengan border cuman bedanya garis outline ini berada di luar bingkai (border) dan 
+             tidak memakan ruang dalam tata letak (layout) desainmu*/
+        }
+
+        #lorem{
+            background-color: palevioletred;
+            width: 70%;
+            padding: 20px;
+            margin: 10px;
+            min-width: 200px; 
+            max-width: 700px; /* MIN DAN MAX SIZE buat ngatur atau menentukan min atau max dari size element, gunanya untuk menjaga 
+            element tidak terlalu kecil atau tidak terlalu besar*/
+
+            /* Min height untuk minimal tinggi dan min width untuk minimal lebar
+             dan untuk Max size nya kita bisa gunakan MAX-HEIGHT untuk maksimal tinggi dan MAX WIDTH untuk maks lebar  */
+
+            
+
+        }
+    </style>
+    <div class="article">
+        <p>
+            Lorem ipsum adalah teks standar atau placeholder yang digunakan dalam dunia desain grafis, penerbitan, dan pengembangan web sebagai pengisi ruang sementara. Tujuannya adalah untuk mendemonstrasikan tampilan visual tata letak (layout), pemilihan font, dan tipografi tanpa terdistraksi oleh isi makna teks yang sebenarnya. 
+             Lorem ipsum adalah teks standar atau placeholder yang digunakan dalam dunia desain grafis, penerbitan, dan pengembangan web sebagai pengisi ruang sementara. Tujuannya adalah untuk mendemonstrasikan tampilan visual tata letak (layout), pemilihan font, dan tipografi tanpa terdistraksi oleh isi makna teks yang sebenarnya. 
+        </p>
+    </div>
+    <div class="article2">
+        <p>
+            Lorem ipsum adalah teks standar atau placeholder yang digunakan dalam dunia desain grafis, penerbitan, dan pengembangan web sebagai pengisi ruang sementara. Tujuannya adalah untuk mendemonstrasikan tampilan visual tata letak (layout), pemilihan font, dan tipografi tanpa terdistraksi oleh isi makna teks yang sebenarnya. 
+        </p>
+    </div>
+
+    <div id="lorem">
+        <p>
+             Lorem ipsum adalah teks standar atau placeholder yang digunakan dalam dunia desain grafis, penerbitan, dan pengembangan web sebagai pengisi ruang sementara. Tujuannya adalah untuk mendemonstrasikan tampilan visual tata letak (layout), pemilihan font, dan tipografi tanpa terdistraksi oleh isi makna teks yang sebenarnya. 
+        </p>
+    </div>
+    
+</body>
+</html>

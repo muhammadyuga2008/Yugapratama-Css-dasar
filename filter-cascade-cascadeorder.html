@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+    <style>
+        img{
+            filter: contrast(20px); 
+        }
+        /*filter di CSS itu gunanya untuk memberikan efek visual 
+        (seperti efek edit foto) pada elemen, gambar, atau latar belakang website.
+        
+        blur()  Membuat gambar/elemen jadi blur/buram.filter: blur(5px);
+        grayscale()  Mengubah gambar jadi hitam-putih (abu-abu).CSSfilter: grayscale(100%);
+        brightness() Mengatur kecerahan gambar (bisa bikin lebih gelap atau lebih terang).CSSfilter: brightness(150%);
+        contrast()  Mengatur kontras tajam-lembutnya warna gambar.CSSfilter: contrast(200%);
+        drop-shadow() Memberikan bayangan yang mengikuti bentuk asli gambar (beda dengan box-shadow yang bayangannya selalu kotak). Sangat cocok untuk gambar PNG transparan.CSSfilter: drop-shadow(4px 4px 8px black);*/
+        p{
+            filter: blur(0px);
+        }
+    </style>
+    <img src="images/musuhalien.png" alt="">
+    <p>
+         Lorem ipsum adalah teks standar atau placeholder yang digunakan dalam dunia desain grafis, penerbitan, dan pengembangan web sebagai pengisi ruang sementara. Tujuannya adalah untuk mendemonstrasikan tampilan visual tata letak (layout), pemilihan font, dan tipografi tanpa terdistraksi oleh isi makna teks yang sebenarnya. 
+    </p>
+
+    <!--!important adalah senjata pamungkas di CSS yang digunakan untuk memaksa suatu aturan kode menjadi pemenang mutlak,
+     mengabaikan semua aturan kaskade (cascade) dan skor kekhususan (specificity) 
+     nah kalo kode css kita di otak atik oleh orang warna nya, tp sebelumnya kita 
+     sudah memasukan inputan importan di warna black nya maka warna nya yg menang tetep black-->
+
+
+<!--User Agent Stylesheet adalah kode CSS bawaan (default) yang sudah tertanam di dalam aplikasi browser (seperti Google Chrome, Safari, Firefox, atau Edge).
+Pernah gak kamu bikin file HTML kosongan, cuma isi tag <h1>judul</h1> dan <p>paragraf</p> tanpa CSS sama sekali, tapi pas dibuka di browser:
+Teks <h1> otomatis ukurannya besar dan tebal (bold).
+Teks <p> otomatis punya jarak (margin) di atas dan bawahnya.
+Link <a> otomatis warnanya biru dan ada garis bawahnya.
+Nah, yang mengatur ukuran, ketebalan, dan jarak otomatis itu adalah User Agent Stylesheet milik browser tersebut.
+Browser sengaja menyediakannya agar website kosongan tanpa CSS pun tetap rapi dan bisa dibaca oleh manusia.-->
+
+<!--Author Stylesheet adalah file CSS yang ditulis dan dibuat langsung oleh kita sebagai Web Developer (pemilik/pembuat website).
+Semua kode CSS yang dari tadi kita bahas—seperti membuat border, border-radius, overflow, sampai kode counter-reset yang kamu buat—itu semua disebut sebagai Author Stylesheet.
+Kata "Author" di sini artinya adalah si penulis atau pencipta kode websitanya.-->
+
+<!--User Stylesheet adalah file CSS khusus yang dibuat oleh pengguna
+ (kita sebagai pengakses web), bukan oleh pemilik website maupun oleh browser.-->
+
+
+ <!-- CASCADE OREDR ->  Cascade Order adalah urutan prioritas atau langkah demi langkah 
+ yang digunakan browser untuk menentukan kode CSS mana yang menang saat ada aturan yang tabrakan.-->
+
+</body>
+</html>

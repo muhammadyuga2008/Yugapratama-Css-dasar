@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content and counter</title>
+</head>
+<body>
+    <style>
+        body {
+    counter-reset: judul subjudul ; /* Mendaftarkan kedua counter sekaligus */
+}
+
+h1 {
+    counter-increment: judul;
+    counter-reset: subjudul;      /* Menekan tombol reset subjudul setiap ada h1 baru */
+}
+
+h2 {
+    counter-increment: subjudul;
+}
+
+h1::before {
+    content: counter(judul) ". ";
+}
+
+h2::before {
+    content: counter(judul) "." counter(subjudul) ". ";
+}
+    </style>
+
+    <h1>judul</h1>
+    <h2>subjudul</h2>
+    <h2>subjudul</h2>
+    <h1>judul</h1>
+    <h2>subjudul</h2>
+    <h2>subjudul</h2>
+    <h1>judul</h1>
+    <h2>subjudul</h2>
+    <h2>subjudul</h2>
+
+</body>
+</html>
