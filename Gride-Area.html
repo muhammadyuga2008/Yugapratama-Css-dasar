@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-Line</title>
+</head>
+<body>
+    <style>
+        .container{
+           grid-template-columns:100px auto 100px;
+           grid-template-rows: 50px auto 50 px; 
+           grid-template-areas: 
+           "header header header"
+                ".content."
+            "footer footer footer";
+        }
+       
+        .header{
+            background-color:navy;
+            grid-area: header;
+           
+        }
+         .content{
+            background-color:aqua;
+             grid-area: content;
+             border: 3px solid palevioletred;
+             margin: 10px;
+           
+           
+        }
+        .footer{
+            background-color: rgb(255, 0, 0);
+             grid-area: footer;
+        }
+       
+    </style>
+    <div class="container"></div>
+     <div class="header">
+        <h1>Selamat datang di Web </h1>
+    </div>
+     <div class="content">
+        <h1>Yuga pratama programer</h1>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          </p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+     </div>
+     
+            <div class="footer">
+                Create by YugaChoki
+            </div>
+
+   
+  
+   
+    
+</body>
+</html>

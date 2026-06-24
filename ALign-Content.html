@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: flex;
+            height: 1200px;
+            background-color: yellow;
+            align-content: center; 
+            flex-wrap: wrap;
+            justify-content: center;
+
+            /* nah salah satu syarat nya ini ya jika mau menggunakan align content*/
+            /*Wadah wajib pakai flex-wrap: wrap;
+             dan jumlah itemnya harus banyak sampai membuat baris baru di bawahnya.*/
+
+
+             /*align-content digunakan untuk mengatur jarak dan posisi tumpukan baris di dalam wadah Flexbox.
+Properti ini gunanya untuk mengatur "ruang kosong" yang ada di antara baris-baris tersebut
+(mau dikumpulkan di tengah, dipepetkan ke atas, ke bawah, atau dikasih jarak antar-baris).*/   
+        }
+        .content{
+            background-color: blue;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: auto;
+        }
+    </style>
+    
+    <div class="container">
+        <div class="content">
+         <h1>konten 1</h1>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+        </div>
+         <div class="content">
+         <h1>konten 2</h1>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+        </div>
+         <div class="content">
+         <h1>konten 3</h1>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+        </div>
+        <div class="content">
+         <h1>konten 3</h1>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+        </div>
+        <div class="content">
+         <h1>konten 3</h1>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+        </div>
+        <div class="content">
+         <h1>konten 3</h1>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+        </div>
+       
+    </div>
+</body>
+</html>

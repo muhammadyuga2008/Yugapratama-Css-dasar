@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display None</title>
+</head>
+<body>
+
+    <style>
+        .menubar{
+            display: inline-block;
+
+        }
+        .menu{
+            background-color:aqua;
+             color: black;
+             padding: 10px;
+             cursor: pointer;
+        }
+        .menulist{
+            display: none;
+            position: absolute;
+            background-color: aqua;
+            z-index: 2;
+        }
+        .menulist a{
+            color: black;
+            display: block;
+            padding: 10px;
+        }
+        .menulist a:hover{
+            background-color: bisque;
+        }
+        .menubar:hover .menu{
+            background-color: bisque;
+        }
+        .menubar:hover .menulist{
+            display: block;
+        }
+
+    </style>
+    <div class="menubar">
+        <button class="menu">Social Media</button>
+        <div class="menulist">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Tiktok</a>
+            <a href="#">Youtube</a>
+        </div>
+    </div>
+     <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+      <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+</body>
+</html>

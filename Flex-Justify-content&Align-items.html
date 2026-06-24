@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: flex;
+            height: 500px;
+            background-color: yellow;
+            align-items: center;
+            justify-content:center;  
+
+            /*"tombol" (nilai) pada align-items untuk mengatur posisi atas-bawah (vertikal):
+                center > Intinya: Rata tengah. Semua elemen otomatis lurus dan sejajar di tengah-tengah secara vertikal. (Paling sering dipakai).
+                flex-start > Intinya: Rata atas. Semua elemen berbaris mepet ke langit-langit wadah.
+                flex-end > Intinya: Rata bawah. Semua elemen berbaris mepet ke lantai/dasar wadah.
+                stretch (Bawaan) > Intinya: Melar penuh. Semua elemen ditarik paksa dari atas sampai bawah agar tingginya sama rata memenuhi wadah.
+                baseline > Intinya: Rata tulisan. Elemen disejajarkan berdasarkan garis bawah ketikan teksnya, peduli amat meskipun ukuran font atau kotaknya berbeda-beda.*/
+
+            /*align-items gunanya untuk mengatur posisi elemen secara vertikal 
+            (atas-bawah) di dalam wadahnya.*/
+
+            /*justify-content di Flexbox yang gunanya untuk mengatur
+            jarak dan posisi elemen secara horizontal 
+            (ke samping dari kiri ke kanan) di dalam wadahnya.*/
+        }
+        .content{
+            background-color: blue;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: auto;
+        }
+    </style>
+    
+    <div class="container">
+        <div class="content">
+         <h1>konten 1</h1>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+        </div>
+         <div class="content">
+         <h1>konten 2</h1>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+        </div>
+         <div class="content">
+         <h1>konten 3</h1>
+        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+        </div>
+       
+    </div>
+</body>
+</html>

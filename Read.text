@@ -1,0 +1,72 @@
+1. Normal Flow (Aliran Normal)Normal flow adalah cara bawaan web browser dalam menampilkan elemen-elemen HTML ketika tidak ada aturan CSS tambahan yang diberikan. 
+Browser akan merender halaman dari atas ke bawah, sesuai dengan urutan penulisan kode HTML.
+ Meskipun kita menambahkan CSS untuk hal lain (seperti warna atau font), elemen akan tetap berada dalam Normal Flow kecuali kita secara eksplisit mengubah struktur tata letaknya.
+
+2. Properti DisplayProperti display digunakan untuk mengubah perilaku dasar bagaimana sebuah elemen mengambil ruang di dalam halaman web.
+Nilai displayKarakteristik UtamaBlockMengambil seluruh lebar ruang yang tersedia dari kiri ke kanan.
+ Elemen baru akan selalu dimulai pada baris baru.InlineHanya mengambil ruang selebar konten di dalamnya.
+  Elemen tidak akan memulai baris baru dan tidak bisa diatur tinggi/lebarnya secara bebas.Inline-blockGabungan dari keduanya.
+   Elemen tetap berjejer di baris yang sama seperti inline, namun kita bisa mengatur panjang dan tingginya seperti block.
+   NoneMenghilangkan elemen dari halaman web sepenuhnya. 
+   Ruang yang sebelumnya digunakan akan dianggap kosong. (Sering digunakan untuk fitur interaktif seperti menyembunyikan dan memunculkan dropdown atau menu).
+
+
+3. Flexbox (Flexible Box Layout)Flexbox dirancang khusus untuk menyusun elemen dalam satu dimensi (hanya baris atau hanya kolom). 
+Fitur ini sangat ideal untuk mendistribusikan ruang dan menyelaraskan item, bahkan ketika ukurannya dinamis atau tidak diketahui secara pasti.
+Sangat cocok untuk tata letak komponen aplikasi berskala kecil hingga menengah.
+Konsep Dasar FlexboxFlex Container: Wadah utama tempat Flexbox aktif.
+ Dibuat dengan memberikan nilai display: flex;.
+
+
+ Flex Item: Elemen-elemen anak secara langsung yang berada di dalam Flex Container.
+ flex-direction: Menentukan arah aliran item, baik secara horizontal (row / kiri ke kanan) maupun vertikal (column / atas ke bawah).
+ flex-wrap: Mengizinkan item untuk turun ke baris baru ketika ruang di baris tersebut sudah tidak muat.Penyelarasan (Alignment)
+  & Tata Ruangjustify-content: Menyelaraskan posisi item pada sumbu utama (contoh: rata tengah, rata kanan, jarak merata).
+  align-items: Menyelaraskan posisi item pada sumbu silang atau kebalikannya (contoh: menyelaraskan tinggi elemen di tengah-tengah secara vertikal).
+  gap: Properti modern yang sangat direkomendasikan untuk memberikan celah/jarak yang konsisten antar item, menggantikan penggunaan margin.
+  Kemampuan Dinamis Flex Itemflex-basis: Menentukan ukuran awal sebuah item sebelum ruang sisa didistribusikan.
+  flex-grow: Menentukan seberapa banyak sebuah item boleh "mengembang" untuk mengisi sisa ruang kosong secara proporsional dibandingkan item lainnya.
+  flex-shrink: Menentukan seberapa cepat sebuah item "menyusut" ketika ruang yang tersedia lebih kecil dari ukurannya.
+
+
+4. Grid LayoutBerbeda dengan Flexbox,
+   CSS Grid adalah sistem tata letak dua dimensi (mengelola baris dan kolom secara bersamaan).
+   Grid adalah solusi terbaik untuk merancang kerangka utama halaman web atau tata letak yang kompleks dan berskala besar.
+   Terminologi GridGrid Container: Wadah utama yang diaktifkan dengan display: grid;.Grid Item:
+   Komponen anak langsung di dalam wadah Grid.
+   Grid Line: Garis maya pemisah antar baris atau kolom.
+   Grid Cell: Area tunggal terkecil di dalam Grid (perpotongan satu baris dan satu kolom).
+   Grid Track: Ruang di antara dua Grid Line yang sejajar (bisa berupa satu baris penuh atau satu kolom penuh).
+   Grid Area: Kumpulan dari beberapa Grid Cell yang membentuk sebuah area spesifik.
+   Satuan Fractional (fr)Satuan fr sangat krusial dalam Grid. Satuan ini merepresentasikan pecahan dari sisa ruang yang tersedia di dalam kontainer.
+   Alih-alih menggunakan persentase atau pixel, fr secara otomatis membagi ruang yang tersisa secara proporsional dan sangat responsif.
+   SubgridFitur tingkat lanjut di mana sebuah Grid Item bertindak kembali sebagai Grid Container, namun ia mewarisi dan mengikuti garis baris/kolom dari Grid Container induk yang ada di atasnya.
+
+
+5.Multiple Column LayoutDigunakan khusus untuk memecah blok teks panjang menjadi beberapa kolom, 
+menyerupai tata letak artikel koran atau majalah.
+column-count: Menentukan jumlah kolom yang ingin dibuat.
+column-width: Menetapkan lebar ideal setiap kolom, browser akan menghitung jumlah kolom secara otomatis sesuai ukuran layar.
+column-gap: Jarak antar kolom.
+
+
+6. CSS PositioningPositioning digunakan untuk mengeluarkan atau menggeser elemen dari Normal Flow bawaan browser.
+Static: Posisi bawaan normal. Properti seperti top atau left tidak akan memberikan efek apa pun.
+Relative: Mirip dengan static, namun kita bisa menggeser elemen dari posisi aslinya menggunakan top, right, bottom, left.
+Ruang aslinya tidak akan ditempati elemen lain.
+Absolute: Elemen dicabut sepenuhnya dari Normal Flow. Elemen lain akan mengisi posisi kosongnya. 
+Elemen bergerak relatif terhadap parent terdekatnya yang tidak bersifat static.Fixed: Mirip absolute, namun elemen bergerak relatif terhadap layar (viewport). 
+Elemen akan tetap diam di tempat meskipun halaman di-scroll (sering digunakan untuk header atau tombol chat).Sticky: Merupakan hibrida. 
+Elemen berperilaku relative hingga pengguna melakukan scroll melewati titik tertentu, lalu elemen tersebut akan berubah menjadi fixed dan menempel di layar.
+Z-IndexKetika elemen menggunakan positioning, ada kemungkinan elemen tersebut saling tumpuk. Properti z-index (bernilai angka) mengontrol lapisan tumpukan tersebut.
+Semakin besar angkanya, semakin tinggi posisi elemen tersebut dan akan menutupi elemen dengan nilai lebih rendah.
+
+
+7. Media Queries (Desain Responsif)Media Queries adalah pondasi utama dari desain web yang responsif. 
+Fitur ini memungkinkan kita menerapkan gaya CSS yang berbeda-beda tergantung pada ukuran layar perangkat pengguna 
+(seperti handphone, tablet, atau desktop).
+Penulisan aturan dalam CSS:@media (kondisi ukuran layar) { /* Aturan CSS khusus */ }
+Penggunaan Media Queries memastikan layout yang kita buat menggunakan Flexbox, Grid, atau tipe tata letak lainnya dapat menyesuaikan diri, mengecil, atau berubah susunan agar tetap nyaman dilihat pada layar berukuran kecil.
+
+
+ini hasil rangkuman saya,saya minta rapihkan saja ke ai struktur kata nya biar mudah di pahamin
